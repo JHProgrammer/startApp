@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Loading} from './Components/Loading'
-import {Main} from './Components/Main'
+import { AppRouter } from './routes/AppRouter';
+
 
 export const App = () => {
 
@@ -16,7 +17,7 @@ export const App = () => {
     <div>
       {isLoading ? 
         <Loading /> : 
-        <Main />
+        <AppRouter/>
       }
     </div>
   )
